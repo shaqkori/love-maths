@@ -5,12 +5,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -120,4 +114,53 @@ q:after {
 }
 table {
   border-collapse: collapse;
+}
+
+body {
+  font-family: "Elms Sans", sans-serif;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content {
+  background: #f0f0f0;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+#mode-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+#solution {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#check {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 25px;
 }
