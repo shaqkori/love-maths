@@ -152,6 +152,9 @@ header {
   font-size: 2rem;
 }
 
+.mode {
+  cursor: pointer;
+}
 #solution {
   display: flex;
   justify-content: center;
