@@ -46,8 +46,6 @@ modes.forEach((mode) => {
       answer = first * second;
     }
 
-    //submit event
-
     //logging
     console.log("selected mode:", currentGameMode);
 
@@ -70,6 +68,9 @@ onsubmit = (event) => {
     document.getElementById("incorrect").innerHTML =
       "Incorrect Anwsers:" + incorrect++;
   }
+
+  //clears input after entering the answer
+  form.reset();
 
   console.log(userAnwser);
   console.log(answer);

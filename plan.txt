@@ -1,0 +1,14 @@
+functionality :
+
+guessing game - random number then user guesses and then correct or incorrect increases
+
+clicks on different operator to change gamemode 
+
+compare user value and true value if equal == then log correct or incorrect based on answer
+
+
+1 - change game mode 
+
+    - operator clickable on click gamemode chanegs 
+
+    base gamemode addition 
