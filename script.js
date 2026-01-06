@@ -32,6 +32,7 @@ modes.forEach((mode) => {
     num2.innerHTML = second;
 
     // if statement handles game state and performs operations
+
     if (currentGameMode == "add") {
       document.getElementById("operator").innerHTML = "+";
       answer = first + second;
@@ -60,13 +61,19 @@ onsubmit = (event) => {
   // sets user value = to the value in the input form
   const userAnwser = Number(input.value);
 
-  //comparison for input
-  if (userAnwser == answer) {
-    document.getElementById("correct").innerHTML =
-      "Correct Anwsers:" + correct++; //increments when right
+  //checks if user value is empty then prompts for an awnser
+  if (userAnwser == "") {
+    document.getElementById("message").innerHTML = "Please enter a answer";
   } else {
-    document.getElementById("incorrect").innerHTML =
-      "Incorrect Anwsers:" + incorrect++;
+    document.getElementById("message").innerHTML = "";
+    //comparison for input
+    if (userAnwser == answer) {
+      document.getElementById("correct").innerHTML =
+        "Correct Anwsers:" + correct++; //increments when right
+    } else {
+      document.getElementById("incorrect").innerHTML =
+        "Incorrect Anwsers:" + incorrect++;
+    }
   }
 
   //clears input after entering the answer
